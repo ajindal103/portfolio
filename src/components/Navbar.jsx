@@ -25,7 +25,7 @@ const Navbar = () => {
           {navLinks.map((link) => (
             <li key={link.id}
               className={`${active === link.title
-                ? "text-white"
+                ? "text-[#ff740a] border-b-3 border-[#ff740a]"
                 : "text-gray-300"
                 } hover:text-[#ff740a] text-[18px] font-medium cursor-pointer hover:border-b-3 hover:border-[#ff740a]`}
               onClick={() => setActive(link.title)}>
@@ -48,7 +48,7 @@ const Navbar = () => {
               {navLinks.map((link) => (
                 <li key={link.id}
                   className={`${active === link.title
-                    ? "text-white"
+                    ? "text-[#ff740a] border-b-3 border-[#ff740a]"
                     : "text-gray-300"
                     } font-poppins font-medium curosr-pointer text-[16px]`}
                   onClick={() => {
