@@ -8,7 +8,7 @@ import { FaDownload } from "react-icons/fa6";
 import { FaCircle } from "react-icons/fa";
 
 
-const Hero = () => {
+const Home = () => {
   return (
     <section className="mx-auto pt-40 sm:pb-30 w-full">
       <div
@@ -18,11 +18,11 @@ const Hero = () => {
           <div className='w-5 h-5 text-[#ff740a]'>
             <FaCircle className="text-[#ff740a] w-5 h-5" />
           </div>
-          <div className='w-1 sm:h-90 h-90 orange-gradient -mt-1' />
+          <div className='w-1 sm:h-80 h-80 orange-gradient -mt-1' />
         </div>
 
         <div className='flex flex-col justify-start items-start'>
-          <h1 className={`${styles.heroHeadText} text-white pt-13 inline-block min-w-[300px]`}>
+          <h1 className={`${styles.heroHeadText} text-[#dddddd] pt-13 inline-block min-w-[300px]`}>
             Hi, I'm &nbsp;
             <span className="inline-block min-w-[140px]">
               <ReactTyped
@@ -38,9 +38,8 @@ const Hero = () => {
               />
             </span>
           </h1>
-          <p className={`${styles.heroSubText} mt-5 text-white-100 text-justify mx-auto`}>
-            I am a passionate developer who loves to code in Python and JavaScript.
-            I enjoy building web applications and learning new technologies.
+          <p className={`${styles.heroSubText} mt-5 text-[#dddddd]-100 text-justify mx-auto`}>
+            A developer passionate about building scalable systems and solving real-world problems efficiently.
           </p>
           <br />
           <div className='mt-5'>
@@ -51,11 +50,12 @@ const Hero = () => {
               <li onClick={() => window.open("https://github.com/ajindal103", "_blank")}>
                 <FaGithub className='text-4xl hover:text-[#ff740a] cursor-pointer' />
               </li>
-              <li>
+              <li onClick={() => window.location.href = "mailto:ajindal103@gmail.com"}>
                 <BiLogoGmail className='text-4xl hover:text-[#ff740a] cursor-pointer' />
               </li>
               <li>
                 <button
+                  onClick={() => window.open("https://drive.google.com/file/d/17jAHA8Tc_0NWtnwrzouxvIsGy9gFKHHv/view?usp=sharing", "_blank")}
                   className='flex gap-2 items-center 
                   text-1.5xl cursor-pointer border-2 
                   px-3 py-1 rounded-lg
@@ -73,4 +73,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default Home

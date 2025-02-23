@@ -1,7 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
-import { services } from '../utils/constants';
 import { fadeIn, textVariant } from '../utils/motion'
 import { Wrapper } from './hoc'
 import { profile } from '../assets'
@@ -43,14 +42,11 @@ const About = () => {
         className='mt-4 text-[#b2b2b2] text-[17px]  
         leading-[30px] text-justify mx-auto max-w-4xl'
       >
-        I'm a full-stack developer with a passion for creating
-        beautiful and functional web applications. I have experience
-        working with a variety of technologies and frameworks, including
-        React, Node.js, Express, and MongoDB. I'm always looking to learn
-        new things and improve my skills, and I'm excited to take on new
-        challenges and projects. I've also worked with RESTful APIs,
-        GraphQL, and cloud services like AWS and Heroku. Let's build
-        something amazing together!
+        Hi, I'm Anurag Jindal, a full-stack developer passionate about building scalable 
+        systems and seamless user experiences. With expertise in Django, React, PostgreSQL, 
+        and cloud technologies, I develop high-performance applications from backend logic to 
+        interactive frontends. I thrive on solving complex problems, optimizing performance, 
+        and continuously learning new technologies to create impactful digital solutions.
       </motion.p>
 
     </>

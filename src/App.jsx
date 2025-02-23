@@ -1,5 +1,12 @@
 import { BrowserRouter } from 'react-router-dom'
-import { About, Contact, Experience, Hero, Navbar, Skills, Works} from './components'
+import Home from './components/Home';
+import Navbar from './components/Navbar';
+import About from './components/About';
+import Skills from './components/Skills';
+import Experience from './components/Experience';
+import Works from './components/Projects';
+import Contact from './components/Contact';
+
 
 const App = () => {
   return (
@@ -7,7 +14,7 @@ const App = () => {
       <div style={{ backgroundColor: "#161617" }} className='relative z-0'>
         <div style={{ backgroundImage: "url('/src/assets/herob.png')" }} className='bg-cover bg-center bg-no-repeat'>
           <Navbar />
-          <Hero />
+          <Home />
         </div>
         <About />
         <Experience />

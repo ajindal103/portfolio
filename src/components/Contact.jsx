@@ -35,42 +35,42 @@ const Contact = () => {
           <form ref={formRef} onSubmit={handleSubmit}
             className='mt-12 flex flex-col gap-6'>
             <label className='flex flex-col'>
-              <span className='text-white font-medium mb-4'>Your Name</span>
+              <span className='text-[#dddddd] font-medium mb-4'>Your Name</span>
               <input
                 type='text'
                 name='name'
                 value={form.name}
                 onChange={handleChange}
                 placeholder='Enter Your Name'
-                className='bg-[#161617] rounded-lg outlined-none border-none font-medium py-4 px-6 placeholder:text-[#b2b2b2] text-white'
+                className='bg-[#161617] rounded-lg outlined-none border-none font-medium py-4 px-6 placeholder:text-[#b2b2b2] text-[#dddddd]'
               />
             </label>
             <label className='flex flex-col'>
-              <span className='text-white font-medium mb-4'>Your Email</span>
+              <span className='text-[#dddddd] font-medium mb-4'>Your Email</span>
               <input
                 type='email'
                 name='email'
                 value={form.name}
                 onChange={handleChange}
                 placeholder='Enter Your Email'
-                className='bg-[#161617] rounded-lg outlined-none border-none font-medium py-4 px-6 placeholder:text-[#b2b2b2] text-white'
+                className='bg-[#161617] rounded-lg outlined-none border-none font-medium py-4 px-6 placeholder:text-[#b2b2b2] text-[#dddddd]'
               />
             </label>
             <label className='flex flex-col'>
-              <span className='text-white font-medium mb-4'>Your Message</span>
+              <span className='text-[#dddddd] font-medium mb-4'>Your Message</span>
               <textarea
                 rows="7"
                 name='message'
                 value={form.message}
                 onChange={handleChange}
                 placeholder='What do you want to say?'
-                className='bg-[#161617] rounded-lg outlined-none border-none font-medium py-4 px-6 placeholder:text-[#b2b2b2] text-white'
+                className='bg-[#161617] rounded-lg outlined-none border-none font-medium py-4 px-6 placeholder:text-[#b2b2b2] text-[#dddddd]'
               />
             </label>
 
             <button
               type="submit"
-              className='bg-[#161617] py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-[#161617] rounded-xl'
+              className='bg-[#161617] py-3 px-8 outline-none w-fit text-[#dddddd] font-bold shadow-md shadow-[#161617] rounded-xl'
             >
               {loading ? "Sending..." : "Send"}
 

@@ -23,8 +23,7 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
 
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import crosslynxus_logo from "./company/crosslynxus_logo.png";
 
 import coderoom from "./project-coderoom.png";
 import jobit from "./jobit.png";
@@ -51,8 +50,7 @@ export {
   tailwind,
   typescript,
   threejs,
-  starbucks,
-  tesla,
+  crosslynxus_logo,
   coderoom,
   jobit,
   profile,

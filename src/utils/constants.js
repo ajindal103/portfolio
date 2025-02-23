@@ -15,9 +15,8 @@ import {
     git,
     figma,
     docker,
-    starbucks,
-    tesla,
     coderoom,
+    crosslynxus_logo,
     jobit,
     threejs,
 } from "../assets";
@@ -123,7 +122,7 @@ const experiences = [
     {
         title: "Software Developer",
         company_name: "Crosslynx Technologies Servives Pvt. Ltd.",
-        icon: starbucks,
+        icon: crosslynxus_logo,
         date: "Jul 2024 - Ongoing",
         points: [
             "Developed scalable RESTful APIs using Django REST Framework with optimized PostgreSQL and Redis caching for enhanced performance.",
@@ -135,7 +134,7 @@ const experiences = [
     {
         title: "Software Developer Intern",
         company_name: "Crosslynx Technologies Servives Pvt. Ltd.",
-        icon: tesla,
+        icon: crosslynxus_logo,
         date: "Jan 2024 - Jun 2024",
         points: [
             "Built an automated test platform for remote meter testing with real-time reporting, background job scheduling, and seamless execution.",
