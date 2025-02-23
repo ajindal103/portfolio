@@ -30,7 +30,7 @@ const About = () => {
           <img
             src={profile}
             alt="profile"
-            className='w-50 h-50 rounded-full border-4 border-[#f0740a]'
+            className='w-50 h-50 rounded-full border-4 border-[#ff740a]'
           />
         </div>
       </motion.div>

@@ -10,8 +10,8 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav style={{backgroundColor: "#161617"}} className={`${styles.paddingX} w-full py-5 flex justify-center items-center fixed top-0 z-20`}>
-      <div className='w-full flex justify-between items-center max-w-6xl mx-auto'>
+    <nav style={{backgroundColor: "#121212"}} className={`${styles.paddingX} w-full py-5 flex justify-center items-center fixed top-0 z-20`}>
+      <div className='w-full flex justify-between items-start max-w-6xl mx-auto'>
         <Link to='/'
           className='flex items-center gap-2'
           onClick={() => {
@@ -19,7 +19,6 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          {/* <img src={logo} alt='logo' className='w-9 h-9 object-contain' /> */}
           <p className='text-[18px] font-bold cursor-pointer flex text-[#ff740a]'>Anurag Jindal</p>
         </Link>
         <ul className='list-none hidden sm:flex flex-row gap-10'>
@@ -28,7 +27,7 @@ const Navbar = () => {
               className={`${active === link.title
                 ? "text-white"
                 : "text-gray-300"
-                } hover:text-white text-[18px] font-medium cursor-pointer`}
+                } hover:text-[#ff740a] text-[18px] font-medium cursor-pointer hover:border-b-3 hover:border-[#ff740a]`}
               onClick={() => setActive(link.title)}>
               <a href={`#${link.id}`}> {link.title} </a>
             </li>

@@ -49,7 +49,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
         </div>
 
         <div className='mt-5'>
-          <h3 className='text-[#f0740a] font-bold text-[24px]'>
+          <h3 className='text-[#ff740a] font-bold text-[24px]'>
             {name}
           </h3>
           <p className='mt-2 text-[#b2b2b2] text-[14px] min-h-[120px]'>
