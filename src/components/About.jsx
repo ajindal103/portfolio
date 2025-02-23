@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
 import { fadeIn, textVariant } from '../utils/motion'
-import { Wrapper } from './hoc'
+import Wrapper from "./Wrapper";
 import { profile } from '../assets'
 import { useInView } from "react-intersection-observer";
 

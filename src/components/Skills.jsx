@@ -1,9 +1,8 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
-import { projects } from '../utils/constants';
 import { fadeIn, textVariant } from '../utils/motion'
-import { Wrapper } from './hoc'
+import Wrapper from "./Wrapper";
 import { useInView } from "react-intersection-observer";
 
 const Skills = () => {

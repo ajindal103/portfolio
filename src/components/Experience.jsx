@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import { styles } from '../styles'
 import { experiences } from '../utils/constants';
 import { textVariant } from '../utils/motion'
-import { Wrapper } from './hoc'
+import Wrapper from "./Wrapper";
 import { useInView } from "react-intersection-observer";
 import "react-vertical-timeline-component/style.min.css";
 

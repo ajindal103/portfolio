@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { styles } from '../../styles'
-import { staggerContainer } from '../../utils/motion'
+import { styles } from '../styles'
+import { staggerContainer } from '../utils/motion'
 
 const Wrapper = (Component, idName) =>
     function HOC() {

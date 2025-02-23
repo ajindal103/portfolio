@@ -4,7 +4,7 @@ import { styles } from '../styles'
 import { projects } from '../utils/constants'
 import { github } from '../assets'
 import { fadeIn, textVariant } from '../utils/motion'
-import { Wrapper } from './hoc'
+import Wrapper from "./Wrapper";
 import { Tilt } from 'react-tilt'
 import { useInView } from "react-intersection-observer";
 
