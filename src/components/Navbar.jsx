@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { styles } from '../styles';
 import { navLinks } from '../utils/constants.js';
-import { menu, close } from '../assets';
+import menu from "../assets/menu.svg";
+import close from "../assets/close.svg";
 
 
 const Navbar = () => {

@@ -1,22 +1,24 @@
-import {
-    javascript,
-    typescript,
-    html,
-    css,
-    reactjs,
-    redux,
-    tailwind,
-    nodejs,
-    mongodb,
-    git,
-    figma,
-    docker,
-    coderoom,
-    crosslynxus_logo,
-    threejs,
-} from "../assets";
+import python from "../assets/tech/python.png";
+import cpp from "../assets/tech/cpp.png";
+import django from "../assets/tech/django.png";
+import postgresql from "../assets/tech/postgresql.png";
+import redis from "../assets/tech/redis.png";
+import html from "../assets/tech/html.png";
+import css from "../assets/tech/css.png";
+import javascript from "../assets/tech/javascript.png";
+import reactjs from "../assets/tech/reactjs.png";
+import nodejs from "../assets/tech/nodejs.png";
+import expressjs from "../assets/tech/expressjs.png";
+import mongodb from "../assets/tech/mongodb.png";
+import docker from "../assets/tech/docker.png";
+import git from "../assets/tech/git.png";
+import redux from "../assets/tech/redux.png";
+import azure from "../assets/tech/azure.png";
 
-export const navLinks = [
+import crosslynxus_logo from "../assets/company/crosslynxus_logo.png";
+import coderoom from "../assets/projects/project-coderoom.png";
+
+const navLinks = [
     {
         id: "about",
         title: "About",
@@ -39,7 +41,19 @@ export const navLinks = [
     },
 ];
 
-const technologies = [
+const skills = [
+    {
+        name: "Python",
+        icon: python,
+    },
+    {
+        name: "C++",
+        icon: cpp,
+    },
+    {
+        name: "Django",
+        icon: django,
+    },
     {
         name: "HTML 5",
         icon: html,
@@ -53,10 +67,6 @@ const technologies = [
         icon: javascript,
     },
     {
-        name: "TypeScript",
-        icon: typescript,
-    },
-    {
         name: "React JS",
         icon: reactjs,
     },
@@ -65,32 +75,36 @@ const technologies = [
         icon: redux,
     },
     {
-        name: "Tailwind CSS",
-        icon: tailwind,
-    },
-    {
         name: "Node JS",
         icon: nodejs,
+    },
+    {
+        name: "Express JS",
+        icon: expressjs,
     },
     {
         name: "MongoDB",
         icon: mongodb,
     },
     {
-        name: "Three JS",
-        icon: threejs,
+        name: "Redis",
+        icon: redis,
+    },
+    {
+        name: "PostgreSQL",
+        icon: postgresql,
     },
     {
         name: "git",
         icon: git,
     },
     {
-        name: "figma",
-        icon: figma,
-    },
-    {
         name: "docker",
         icon: docker,
+    },
+    {
+        name: "Azure DevOps",
+        icon: azure,
     },
 ];
 
@@ -138,4 +152,4 @@ const projects = [
 
 ];
 
-export { technologies, experiences, projects };
+export { navLinks, skills, experiences, projects };
