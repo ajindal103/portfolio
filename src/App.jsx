@@ -11,8 +11,8 @@ import Contact from './components/Contact';
 const App = () => {
   return (
     <BrowserRouter>
-      <div style={{ backgroundColor: "#161617" }} className='relative z-0'>
-        <div style={{ backgroundImage: "url('/src/assets/herob.png')" }} className='bg-cover bg-center bg-no-repeat'>
+      <div style={{ backgroundColor: "#050816" }} className='relative z-0'>
+        <div style={{ backgroundImage: "url('/src/assets/herobg.png')" }} className='bg-cover bg-center bg-no-repeat'>
           <Navbar />
           <Home />
         </div>

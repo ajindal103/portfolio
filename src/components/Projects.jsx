@@ -23,7 +23,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
         options={{
           max: 45, scale: 1, speed: 450
         }}
-        className="bg-[#1e1e1e] p-5 rounded-2xl sm:w-[360px] w-full"
+        className="bg-[#0e1226] p-5 rounded-2xl sm:w-[360px] w-full"
       >
         <div className='relative w-full h-[230px]'>
           <img
@@ -52,7 +52,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
           <h3 className='text-[#ff740a] font-bold text-[24px]'>
             {name}
           </h3>
-          <p className='mt-2 text-[#b2b2b2] text-[14px] min-h-[120px]'>
+          <p className='mt-2 text-[#b2b2b2] text-[14px] min-h-[120px] text-justify'>
             {description}
           </p>
         </div>

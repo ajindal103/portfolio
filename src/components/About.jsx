@@ -39,7 +39,7 @@ const About = () => {
         initial="hidden"
         animate={inView ? "show" : "exit"}
         variants={fadeIn("", "", 0.1, 2)}
-        className='mt-4 text-[#b2b2b2] text-[17px]  
+        className='mt-4 text-[#dddddd] text-[17px]  
         leading-[30px] text-justify mx-auto max-w-4xl'
       >
         Hi, I'm Anurag Jindal, a full-stack developer passionate about building scalable 

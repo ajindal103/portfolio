@@ -1,8 +1,4 @@
 import {
-    mobile,
-    backend,
-    creator,
-    web,
     javascript,
     typescript,
     html,
@@ -17,7 +13,6 @@ import {
     docker,
     coderoom,
     crosslynxus_logo,
-    jobit,
     threejs,
 } from "../assets";
 
@@ -41,25 +36,6 @@ export const navLinks = [
     {
         id: "contact",
         title: "Contact",
-    },
-];
-
-const services = [
-    {
-        title: "Web Developer",
-        icon: web,
-    },
-    {
-        title: "React Native Developer",
-        icon: mobile,
-    },
-    {
-        title: "Backend Developer",
-        icon: backend,
-    },
-    {
-        title: "Content Creator",
-        icon: creator,
     },
 ];
 
@@ -147,21 +123,19 @@ const experiences = [
 const projects = [
     {
         name: "CODEROOM",
-        description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        description: "A real-time collaborative coding platform that enables seamless teamwork with synchronized code editing, voice calls, and chat. Create virtual rooms, work together effortlessly, and access your projects anytime for continuous collaboration and efficient problem-solving.",
         tags: ["reactjs", "nodejs", "expressjs", "mongodb", "socket.io"],
         image: coderoom,
         source_code_link: "https://coderoom-anurag.netlify.app/",
     },
     {
         name: "ATTENDANCE TRACKER",
-        description:
-            "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-            tags: ["reactjs", "nodejs", "expressjs", "mongodb", "socket.io"],
-        image: jobit,
+        description: "A real-time collaborative coding platform that enables seamless teamwork with synchronized code editing, voice calls, and chat. Create virtual rooms, work together effortlessly, and access your projects anytime for continuous collaboration and efficient problem-solving.",
+        tags: ["reactjs", "nodejs", "expressjs", "mongodb", "socket.io"],
+        image: coderoom,
         source_code_link: "https://github.com/",
     },
 
 ];
 
-export { services, technologies, experiences, projects };
+export { technologies, experiences, projects };
