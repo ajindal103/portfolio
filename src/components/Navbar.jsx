@@ -20,7 +20,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <p className='text-[18px] font-bold cursor-pointer flex text-[#ff740a]'>Anurag Jindal</p>
+          <p className='text-[18px] font-bold cursor-pointer flex text-[#ff740a]'>AJ</p>
         </Link>
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((link) => (

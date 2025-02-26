@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import emailjs from '@emailjs/browser'
 import { styles } from '../styles'
 import Wrapper from "./Wrapper";
-import { slideIn } from '../utils/motion'
+import { fadeIn } from '../utils/motion'
 
 const Contact = () => {
   const formRef = useRef();
@@ -16,14 +16,49 @@ const Contact = () => {
 
   const [loading, setLoading] = useState(false)
 
-  const handleChange = (e) => { }
-  const handleSubmit = (e) => { }
+  const handleChange = (e) => {
+    const { name, value } = e.target
+
+    setForm({
+      ...form,
+      [name]: value
+    })
+  }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    emailjs.send(
+      'service_jpmixeh',
+      'template_qvfe9se',
+      {
+        from_name: form.name,
+        to_name: 'Anurag Jindal',
+        from_email: form.email,
+        to_email: 'ajindal103@gmail.com',
+        message: form.message
+      },
+      'jzgGZw1EGmtQ7Rd-n'
+    ).then(() => {
+      setLoading(false);
+      alert('Message sent successfully');
+      setForm({
+        name: '',
+        email: '',
+        message: ''
+      })
+
+    }, (error) => {
+      setLoading(false);
+      alert('Message sending failed');
+    });
+  }
 
 
   return (
     <>
       <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden justify-center'>
-        <motion.div variants={slideIn("left", "tween", 0.1, 0.4)}
+        <motion.div variants={fadeIn("up", "tween", 0.1, 0.4)}
           className='flex-[0.65] bg-[#0e1226] p-8 rounded-2xl'>
           <p className={`${styles.sectionSubText} text-center`}>
             Get in Touch
@@ -50,7 +85,7 @@ const Contact = () => {
               <input
                 type='email'
                 name='email'
-                value={form.name}
+                value={form.email}
                 onChange={handleChange}
                 placeholder='Enter Your Email'
                 className='bg-[#050816] rounded-lg outlined-none border-none font-medium py-4 px-6 placeholder:text-[#b2b2b2] text-[#ffffff]'

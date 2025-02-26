@@ -41,39 +41,6 @@ const SkillCard = ({ index, name, icon }) => {
   )
 }
 
-const Projects = () => {
-  const { ref, inView } = useInView({ threshold: 0.2, triggerOnce: false });
-
-  return (
-    <>
-      <motion.div
-        ref={ref}
-        initial="hidden"
-        animate={inView ? "show" : "exit"}
-        variants={textVariant()}
-      >
-        <p className={`${styles.sectionSubText} text-center`}>
-          MY WORK
-        </p>
-        <h2 className={`${styles.sectionHeadText} text-center`}>
-          Projects
-        </h2>
-      </motion.div>
-
-      <div className='mt-20 flex flex-wrap gap-7 justify-center'>
-        {projects.map((project, index) => (
-          <ProjectCard
-            key={`project-${index}`}
-            index={index}
-            {...project}
-          />
-        ))}
-
-      </div>
-    </>
-  )
-}
-
 const Skills = () => {
   const { ref, inView } = useInView({ threshold: 0.2, triggerOnce: false });
 
@@ -93,7 +60,7 @@ const Skills = () => {
         </h2>
       </motion.div>
 
-      <div className='mt-20 flex flex-wrap gap-7 justify-center'>
+      <div className='mt-10 flex flex-wrap gap-5 justify-center'>
         {skills.map((skill, index) => (
           <SkillCard
             key={`skill-${index}`}
