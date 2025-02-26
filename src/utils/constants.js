@@ -144,10 +144,10 @@ const projects = [
     },
     {
         name: "ATTENDANCE TRACKER",
-        description: "A real-time collaborative coding platform that enables seamless teamwork with synchronized code editing, voice calls, and chat. Create virtual rooms, work together effortlessly, and access your projects anytime for continuous collaboration and efficient problem-solving.",
-        tags: ["reactjs", "nodejs", "expressjs", "mongodb", "socket.io"],
+        description: "A real-time AI-powered attendance tracker that automates attendance management with face recognition, enabling seamless tracking, instant verification, and accurate record-keeping. Easily monitor attendance, enhance security, and access data anytime for efficient management.",
+        tags: ["python", "tkinter", "opencv", "mysql", "numpy"],
         image: coderoom,
-        source_code_link: "https://github.com/",
+        source_code_link: "https://github.com/ajindal103/attendance-tracker",
     },
 
 ];
