@@ -29,7 +29,7 @@ const About = () => {
           <img
             src={profile}
             alt="profile"
-            className='w-50 h-50 rounded-full border-4 border-[#ff740a]'
+            className='w-50 h-50 rounded-full border-4 border-[#f0740a]'
           />
         </div>
       </motion.div>
@@ -42,11 +42,7 @@ const About = () => {
         className='mt-4 text-[#dddddd] text-[17px]  
         leading-[30px] text-justify mx-auto max-w-4xl'
       >
-        Hi, I'm Anurag Jindal, a full-stack developer passionate about building scalable 
-        systems and seamless user experiences. With expertise in Django, React, PostgreSQL, 
-        and cloud technologies, I develop high-performance applications from backend logic to 
-        interactive frontends. I thrive on solving complex problems, optimizing performance, 
-        and continuously learning new technologies to create impactful digital solutions.
+        Hi, I’m Anurag Jindal, a backend developer passionate about building scalable, high-performance systems and reliable APIs. With experience in Django, FastAPI, PostgreSQL, Redis/Celery, and MQTT-based IoT integrations, I develop production-ready backend services for data-intensive platforms. I enjoy solving complex problems, optimizing performance, and designing clean architectures that scale smoothly in real-world workloads.
       </motion.p>
 
     </>

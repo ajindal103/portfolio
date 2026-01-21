@@ -5,7 +5,7 @@ import { projects } from '../utils/constants'
 import github from "../assets/github.png";
 import { fadeIn, textVariant } from '../utils/motion'
 import Wrapper from "./Wrapper";
-import { Tilt } from 'react-tilt'
+import Tilt from 'react-parallax-tilt'
 import { useInView } from "react-intersection-observer";
 
 
@@ -59,7 +59,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
 
         <div className='mt-4 flex flex-wrap gap-2'>
           {tags.map((tag, index) => (
-            <p key={`tag-${index}`} className={`text-[14px] text-[#dddddd]`}>
+            <p key={`tag-${index}`} className={`text-[14px] text-[#ff740a]`}>
               #{tag}
             </p>
           ))}

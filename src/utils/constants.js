@@ -1,8 +1,9 @@
 import python from "../assets/tech/python.png";
-import cpp from "../assets/tech/cpp.png";
 import django from "../assets/tech/django.png";
+import fastapi from "../assets/tech/fastapi.png"
 import postgresql from "../assets/tech/postgresql.png";
 import redis from "../assets/tech/redis.png";
+import cpp from "../assets/tech/cpp.png";
 import html from "../assets/tech/html.png";
 import css from "../assets/tech/css.png";
 import javascript from "../assets/tech/javascript.png";
@@ -13,7 +14,11 @@ import mongodb from "../assets/tech/mongodb.png";
 import docker from "../assets/tech/docker.png";
 import git from "../assets/tech/git.png";
 import redux from "../assets/tech/redux.png";
+import postman from "../assets/tech/postman.png";
 import azure from "../assets/tech/azure.png";
+import celery from "../assets/tech/celery.png";
+import ws from "../assets/tech/websockets.svg";
+import mqtt from "../assets/tech/mqtt.png";
 
 import crosslynxus_logo from "../assets/company/crosslynxus_logo.png";
 import coderoom from "../assets/projects/project-coderoom.png";
@@ -47,12 +52,36 @@ const skills = [
         icon: python,
     },
     {
-        name: "C++",
-        icon: cpp,
-    },
-    {
         name: "Django",
         icon: django,
+    },
+    {
+        name: "FastAPI",
+        icon: fastapi,
+    },
+    {
+        name: "PostgreSQL",
+        icon: postgresql,
+    },
+    {
+        name: "Redis",
+        icon: redis,
+    },
+    {
+        name: "Celery",
+        icon: celery,
+    },
+    {
+        name: "WebSockets",
+        icon: ws,
+    },
+    {
+        name: "MQTT",
+        icon: mqtt,
+    },
+    {
+        name: "C++",
+        icon: cpp,
     },
     {
         name: "HTML 5",
@@ -61,6 +90,26 @@ const skills = [
     {
         name: "CSS 3",
         icon: css,
+    },
+    {
+        name: "MongoDB",
+        icon: mongodb,
+    },
+    {
+        name: "GIT",
+        icon: git,
+    },
+    {
+        name: "Postman",
+        icon: postman,
+    },
+    {   
+        name: "Docker",
+        icon: docker,
+    },
+    {
+        name: "Azure DevOps",
+        icon: azure,
     },
     {
         name: "JavaScript",
@@ -82,30 +131,6 @@ const skills = [
         name: "Express JS",
         icon: expressjs,
     },
-    {
-        name: "MongoDB",
-        icon: mongodb,
-    },
-    {
-        name: "Redis",
-        icon: redis,
-    },
-    {
-        name: "PostgreSQL",
-        icon: postgresql,
-    },
-    {
-        name: "git",
-        icon: git,
-    },
-    {
-        name: "docker",
-        icon: docker,
-    },
-    {
-        name: "Azure DevOps",
-        icon: azure,
-    },
 ];
 
 const experiences = [
@@ -113,12 +138,12 @@ const experiences = [
         title: "Software Developer",
         company_name: "Crosslynx Technologies Servives Pvt. Ltd.",
         icon: crosslynxus_logo,
-        date: "Jul 2024 - Ongoing",
+        date: "Jul 2024 - Present",
         points: [
-            "Developed scalable RESTful APIs using Django REST Framework with optimized PostgreSQL and Redis caching for enhanced performance.",
-            "Implemented IoT device connectivity with the MQTT Pub/Sub model using EMQX, ensuring seamless real-time data processing.",
-            "Optimized backend workflows with Pandas, NumPy, Celery, and DRF, enabling efficient data processing and asynchronous task execution.",
-            "Managed high-traffic API requests for navigation, weather, and document verification while collaborating with cross-functional teams."
+            "Designed and implemented scalable REST APIs for tracker onboarding, trip lifecycle, telemetry persistence, and meter data orchestration using Django/DRF, FastAPI, and PostgreSQL.",
+            "Integrated real-time IoT telemetry ingestion using MQTT (EMQX broker) to process high-frequency GPS and sensor data streams with validation and structured storage.",
+            "Improved performance and scalability using Redis caching, asynchronous processing, and PostgreSQL query optimization, enabling stable API latency while supporting 1000+ concurrent trackers.",
+            "Built a high-throughput FastAPI billing microservice capable of generating thousands of bills per second, performing real-time wallet deductions using Redis + Celery, and optimizing data-heavy APIs for large datasets."
         ],
     },
     {
@@ -127,9 +152,8 @@ const experiences = [
         icon: crosslynxus_logo,
         date: "Jan 2024 - Jun 2024",
         points: [
-            "Built an automated test platform for remote meter testing with real-time reporting, background job scheduling, and seamless execution.",
-            "Developed a scalable Pytest framework integrating SOAP APIs for automated test execution and efficient data retrieval.",
-            "Designed a secure multi-tenant system using Microsoft Auth 2.0 and PostgreSQL to manage test records with high data accuracy."
+            "Developed an automated test execution platform using Python, Django, and Pytest, enabling remote test execution, real-time reporting, and reducing manual testing effort by 60%.",
+            "Built a multi-tenant testing framework integrated with SOAP APIs, PostgreSQL, and Microsoft OAuth 2.0, supporting 10,000+ meters while maintaining 99.9% data accuracy.",
         ],
     }
 ];
@@ -138,7 +162,7 @@ const projects = [
     {
         name: "CODEROOM",
         description: "A real-time collaborative coding platform that enables seamless teamwork with synchronized code editing, voice calls, and chat. Create virtual rooms, work together effortlessly, and access your projects anytime for continuous collaboration and efficient problem-solving.",
-        tags: ["reactjs", "nodejs", "expressjs", "mongodb", "socket.io"],
+        tags: ["reactjs", "nodejs", "express", "mongodb", "socket.io"],
         image: coderoom,
         source_code_link: "https://coderoom-anurag.netlify.app/",
     },

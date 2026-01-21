@@ -55,7 +55,7 @@ const Home = () => {
               </li>
               <li>
                 <button
-                  onClick={() => window.open("https://drive.google.com/file/d/17jAHA8Tc_0NWtnwrzouxvIsGy9gFKHHv/view?usp=sharing", "_blank")}
+                  onClick={() => window.open("https://drive.google.com/file/d/1OQrQF_oIlxDO0yq_gT2Wyd6gbNJj7Ll3/view?usp=sharing", "_blank")}
                   className='flex gap-2 items-center 
                   text-1.5xl cursor-pointer border-2 
                   px-3 py-1 rounded-lg
